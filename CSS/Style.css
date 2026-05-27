@@ -1,4 +1,20 @@
-body
+
+
+html, body{
+    margin: 0%;
+    background-color: e5e7ee;
+}
+
+.hi-g{
+    background-color: #992931;
+    padding: 20px;
+    margin: 0px;
+}
+.hi-l
 {
-backgroundcolor: #ffffff;
+    background-color: #E04646;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    flex-box: unset;
 }
