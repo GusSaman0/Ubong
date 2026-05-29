@@ -23,6 +23,7 @@ html, body{
 		var(--header-outer-height) - var(--header-inner-height)
 	);
 	--header-bg: #e5e7ee;
+--body-bg: #ff7d63;
 }
 
 .hi-g2
@@ -148,6 +149,8 @@ html, body{
 /*capas*/
 /*Seccion de inicio de sesion, registro*/
 .b1-1
+
+
 {
     display: flex;
     flex-direction: row;
