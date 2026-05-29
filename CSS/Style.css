@@ -28,12 +28,12 @@ html, body{
 }
 
 .hi-g h1{
-    color: #FF7D63;
+    color: #ffffff;
     font-family: 'Arial', sans-serif;
     display: flex;
 }
 
-.hi-l:hover
+.hi-g:hover .hi-l
 {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
@@ -51,6 +51,11 @@ html, body{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.hi-n
+{
+    
 }
 
 /*b = body */
