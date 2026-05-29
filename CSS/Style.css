@@ -402,3 +402,50 @@ html, body{
 {
     transform: scale(1.2);
 }
+
+
+/*Inicio y registro de cuenta */
+
+.b1-inreg
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.b1-inreb
+{
+    align-self: stretch;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 15.07%;
+    position: relative;
+}
+
+.b1-inrex
+{
+    cursor: pointer;
+    position: absolute;
+    right: auto;
+    top: 30px;
+    z-index: 10;
+    left: 30px;
+}
+
+.b1-inreotop
+{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.b1-binreotop
+{
+    background-color: rgba(0, 0, 0, 0);
+    color: #992931;
+    font-size: 19px;
+    font-family: Arial, sans-serif;
+    border: 5px solid rgba(0, 0, 0, 0) ;
+}
