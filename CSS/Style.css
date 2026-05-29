@@ -10,105 +10,138 @@ html, body{
 /*g = general */
 /*l = logo */
 /*l1m = logo image 1 */
-.hi-g{
-    background-color: #992931;
-    padding: 3px;
-    margin: 0px;
-    display: flex;
-    justify-content: space-between;
+
+*,*:after,*:before 
+{
+	box-sizing: border-box;
 }
 
-.hi-gl
+:root {
+	--header-outer-height: 120px;
+	--header-inner-height: 70px;
+	--header-height-difference: calc(
+		var(--header-outer-height) - var(--header-inner-height)
+	);
+	--header-bg: #e5e7ee;
+}
+
+.hi-g2
 {
+    width: 90%;
+    max-width: 1280px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hi-g
+{
+    height: var(--header-inner-height);
+    position: sticky;
+    top: sticky;
+    top: calc(var(--header-height-difference)*-1);
     display: flex;
     align-items: center;
-    gap: 20px;
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hi-g1
+{
+    height: var(--header-inner-height);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hi-l
 {
-    background-color: #FF7D63;
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease-in-out;
-    margin-right: 20px;
+    display: block;
+    height: calc(var(--header-inner-height)-30px);
 }
 
-.hi-g h1{
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-}
-
-.hi-g:hover .hi-l
+.hi-n
 {
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.hi-l1m
+.hi-n a, .hi-n button
+{
+    font-size: 1.125rem;
+    color: inherit;
+    margin-left: 1.75rem;
+    position: relative;
+    font-weight: 500;
+}
+
+.hi-n a
+{
+	display: none;
+	font-size: 1.125rem;
+	color: inherit;
+	text-decoration: none;
+} 
+
+.hi-n button
+{
+    border: 0;
+	background-color: transparent;
+	padding: 0;
+}
+
+.hi-n a:hover:after, .hi-n button:hover:after
+{
+    transform: scaleX(1);
+}
+
+.hi-n a:after, .hi-n button:after
+{
+    transition: 0.25s ease;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: currentcolor;
+	transform: scalex(0);
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+}
+
+.hi-img
 {
     width: 70px;
     height: 70px;
 }
 
-.hi-l1m img 
+.hi-l :hover
 {
-    margin-left: 10px;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    transform: scale(1.1);
+    animation: 0.4s ease forwards; 
 }
 
-.hi-n li
+.hi-h1
 {
-    display: flex;
-    flex-direction: row;
-    align-items: right;
-}
-
-.hi-n ul
-{
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    margin-top: 20px;
-    padding: 0;
-}
-
-.hi-n1
-{
-    display: flex;
-    padding: 1px;
-}
-
-.hi-n1 :hover
-{
-    padding: 1px;
-}
-
-.hi-n1
-{
-    border-radius: 50px;
-    margin: 5px;
-    padding: 10px;
-    display: flex;
-    background-color: #FF7D63;
-    color: #992931;
-    font-size: 18px;
     font-family: 'Arial', sans-serif;
+    color: #434343;
+    flex: auto;
+    font-size: 40px;
 }
 
-.hi-n1 a
+@media (min-width: 800px)
 {
-    text-decoration: none;
-    color: #992931;
-}
+    .hi-n a 
+    {
+        display: inline-block;
+    }
 
+    .hi-n button 
+    {
+        display: none;
+    }
+}
 /*b = body */
 /*1.. = capa 1... */
 /*1/2 = imagen o login/registro 1/2 */
