@@ -270,7 +270,7 @@ html, body{
 {
     flex: 0 0 5em;
     height: 100px;
-    padding: 300px;
+    padding: 250px;
     background: #FF7D63;
     font-size: 30px;
     text-align: center;
@@ -448,4 +448,94 @@ html, body{
     font-size: 19px;
     font-family: Arial, sans-serif;
     border: 5px solid rgba(0, 0, 0, 0) ;
+}
+
+/*formularios*/
+.formulario
+{
+    background-color: #e5e7ee;
+}
+.b2-fg
+{
+    margin-top: 0;
+    width: 375px;
+    font-family: Arial, sans-serif;
+}
+
+.b2-fh1
+{
+    font-size: 26px;
+    margin: 10px 0 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+}
+
+.b2-fhdl
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    position: relative;
+    text-align: start;
+    width: 100%;
+}
+
+.b2-fhli
+{
+    
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.b2-fhi
+{
+    background-color: #434343;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    margin: 9px;
+}
+
+
+.b2-fhi input
+{
+    appearance: none;
+    background: none;
+    border: none;
+    padding: 20px;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+.b2-fhi a
+{
+    padding: 9px;
+    color: #e5e7ee;
+    text-decoration: none;
+}
+
+.b2-fb
+{
+    background-color: #992931;
+    padding: 0 16px;
+    margin-top: 20px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    color: #deb3b5;
+    height: 50px;
+    width: 373px;
+    box-shadow: 0 5px 0 #6e1d22;
+}
+
+.b2-fb:hover
+{
+    background-color: #b63a42;
+    color: #e5e7ee;
+    box-shadow: 0 5px 0 #992931;
 }
