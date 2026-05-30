@@ -434,6 +434,11 @@ html, body{
     left: 30px;
 }
 
+.b1-inrex img
+{
+    width: 20px;
+}
+
 .b1-inreotop
 {
     position: absolute;
@@ -450,6 +455,10 @@ html, body{
     border: 5px solid rgba(0, 0, 0, 0) ;
 }
 
+.b1-binreotop:hover
+{
+    transform: scale(1.02);
+}
 /*formularios*/
 .formulario
 {
@@ -538,4 +547,35 @@ html, body{
     background-color: #b63a42;
     color: #e5e7ee;
     box-shadow: 0 5px 0 #992931;
+}
+
+.b2-fbb
+{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.b2-fbu
+{
+    background-color: #FF7D63;
+    padding: 0 16px;
+    margin-top: 20px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    color: #83311f;
+    height: 50px;
+    width: 180px;
+    box-shadow: 0 5px 0 #cb5a43;
+    margin: 9px;
+    position: relative
+}
+
+.b2-fbu:hover
+{
+    background-color: #cb5a43;
+    color: #e5e7ee;
+    box-shadow: 0 5px 0 #9e402e;
 }
