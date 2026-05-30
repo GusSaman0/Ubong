@@ -4,50 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
 </head>
 <body>
     <header class="hi-g">
 	    <div class="hi-g1 hi-g2">
             <div class="hi-l">
-                <img src="./Imagenes/logo_Ubong.png" alt="Ubong" class="hi-img">
+                <img src="../Imagenes/logo_Ubong.png" alt="Ubong" class="hi-img">
             </div>
             <h1 class="hi-h1">UBONG</h1>
             <nav class="hi-n">
-                <a href="Inicio_Admin.html">Inicio</a>
+                <a href="../Inicio_Admin.html">Inicio</a>
                 <a href="">Cuenta</a>
-                <a href="./Reportes/Reportes.html">reportes</a>
+                <a href="../Reportes/Admin-Reportes.html">reportes</a>
                 <button>Menu</button>
             </nav>
-	    </div>
+	    </div> 
     </header>
-    <div>
-        Reportes Registrado
-    </div>
-    <div>
-        <table>
-            <tr>
-                <th>Fecha</th>
-                <th>Usuario</th>
-                <th>ID</th>
-                <th>maquina</th>
-                <th>ID MAQUINA</th>
-                <th>descripcion</th>
-            </tr>
+    <section class="r1-g" style="margin-top: 60px;">
+        <h1 class="r1-t">
+            Reportes
+        </h1>
+        <table class="r1-tabla">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Titulo</th>
+                    <th>Maquina</th>
+                    <th>Descripcion</th>
+                    <th>Estado</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Error motor</td>
+                    <td>Maquina 2</td>
+                    <td>No inicia correctamente</td>
+                    <td class="estado-pendiente">
+                        Pendiente
+                    </td>
+                    <td>29/05/2026</td>
+                </tr>
+            </tbody>
         </table>
-    </div>
-    <footer>
-        <div>
-            logo
-        </div>
-        <div>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-            </ul>
-        </div>
-    </footer>
+    </section>
 </body>
 </html>
