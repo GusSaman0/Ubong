@@ -492,11 +492,26 @@ html, body{
 
 .b2-fhli
 {
-    
     display: inline-flex;
     flex-direction: column;
     gap: 4px;
 }
+
+.b2-fhll
+{
+
+    color: #000000;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: center;
+}
+
+.b2-fhll label
+{
+    display: flex;
+}
+
 
 .b2-fhi
 {
@@ -578,4 +593,112 @@ html, body{
     background-color: #cb5a43;
     color: #e5e7ee;
     box-shadow: 0 5px 0 #9e402e;
+}
+
+.b2-txa
+{
+    width: 100%;
+    min-height: 180px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #434343;
+    resize: vertical;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/*Desplegable*/
+
+.b2-fm1
+{
+    background-color: #434343;
+    border-radius: 20px;
+    align-items: center;
+    padding: 20px;
+    color: #e5e7ee;
+}
+
+
+.b2-fm2
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.b2-fm1 li
+{
+    position: relative;
+}
+
+
+.b2-fm1 div
+{
+    display: block;
+    padding: 15px 20px;
+    color: e5e7ee;
+    text-decoration: none;
+    background-color: #992931;
+    transition: background-color 0.3s ease;
+}
+
+
+.b2-fm1 div:hover
+{
+    background-color: #FF7D63;
+}
+
+.b2-fm3,.b2-fm4
+{
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 220px;
+    z-index: 1000;
+}
+
+
+.b2-fm3
+{
+    top: 100%;
+    left: 0;
+}
+
+
+.b2-fm1 li:hover > .b2-fm3
+{
+    display: block;
+}
+
+
+.b2-fm4
+{
+    top: 0;
+    left: 100%;
+}
+
+
+.b2-fm3 li:hover > .b2-fm4
+{
+    display: block;
+}
+
+
+.b2-fm3 div,
+.b2-fm4 div
+{
+    background-color: #434343;
+}
+
+
+.b2-fm3 div:hover,
+.b2-fm4 div:hover
+{
+    background-color: #5f5f5f;
 }
